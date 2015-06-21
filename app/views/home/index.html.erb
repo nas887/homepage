@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Neil Shah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="I'm a JavaScript-obsessed fullstack engineer loving all things mobile and all things different.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="Panel Panel--main">
+            <h1 class="Panel-title">Hello</h1>
+            <h3 class="Panel-subtitle">I'm <a href="https://www.facebook.com/neil.shah.3958" target="_blank">Neil.</a> I write software, climb rocks, and ride bikes.</h3>
+            <div class="contact">
+                <a href="http://twitter.com/kneelshah">
+                    <%= image_tag 'logo_twitter.png', class: 'contact-logo' %>
+                </a>
+                <a href="http://github.com/nas887">
+                    <%= image_tag 'logo_github.png', class: 'contact-logo' %>
+                </a>
+                <a href="https://www.linkedin.com/profile/view?id=61022658">
+                    <%= image_tag 'logo_linked_in.png', class: 'contact-logo' %>
+                </a>
+            </div>
+        </div>
+        <h2 class='Panel-title'>What I'm helping build</h2>
+        <div class="Panel">
+            <h2 class="Panel-title u-texthidden padded">brightwheel
+                <%= image_tag 'brightwheel_logo.png', class: 'logo' %>
+            </h2>
+            <div class="Panel-body">
+                <p>I'm currently the lead software engineer at <a href="http://mybrightwheel.com">brightwheel</a>, where I'm helping lead an incredible team engineers to build the first first free, mobile platform for early education. We launched for iOS, Android and Web in Spring 2015, and are growing rapidly. Also, <a href="https://angel.co/brightwheel">We're hiring!</a></p>
+            </div>
+        </div>
+        
+        <h2 class="Panel-title">What I've helped build</h2>
+        <div class="Panel">
+            <h2 class="Panel-title u-texthidden padded">NatureBox
+                <%= image_tag 'natureboxlogo_large.png', class: 'logo' %>
+            </h2>
+            <div class="Panel-body">
+                <p>I developed much of the frontend functionality on <a href="http://www.naturebox.com">NatureBox.com</a>. NatureBox is built entirely on Magento Enterprise Edition. Magento is a robust turn-key e-commerce solution that offers a lot of functionality and flexibility. Although Magento offers functionality and flexibility, it tends to be incredibly slow, burdened primarily by it's <a href="http://www.magentocommerce.com/wiki/2_-_magento_concepts_and_architecture/magento_database_diagram">EAV database schema</a>.</p>
+                <p>In order to mitigate some of Magento's inherit weaknesses, we built a custom REST api that spoke to a series of Backbone.js clients that now handle the entire frontend of <a href="http://www.naturebox.com">NatureBox</a></p>
+                <p>I worked closely with designers, product managers and business teams to bring a desktop-viewport only website to one that's completely optimized for smaller, touch-based devices.</p>
+            </div>
+            <%= image_tag 'naturebox-catalog.png', class: 'img-block' %>
+        </div>
+        <div class="Panel">
+            <h2 class="Panel-title u-texthidden padded">Bonobos
+                <%= image_tag 'logo_bonobos.png', html: {class: 'logo'} %>
+            </h2>
+            <div class="Panel-body">
+                <p>I managed much of the initial migration of <a href="http://www.bonobos.com">Bonobos.com</a> from it's original legacy e-commerce application to Magento in 2011.</p>
+                <p>I worked with the CTO to open the Bonobos Technology office in Palo Alto, CA.</p>
+                <p>I worked with product managers and designers to design and develop much of the internal tools, API's and frontend client for <a href="http://www.bonobos.com">Bonobos.com from 2012 - 2013</a></p>
+            </div>
+            <%= image_tag 'bonobos_homepage.png', class: 'img-block' %>
+        </div>
+        <div class="Panel">
+            <h2 class="Panel-title">Find me here</h2>
+            <div class="Panel-body">
+                <div class="contact">
+                    <a href="http://twitter.com/kneelshah">
+                        <%= image_tag 'logo_twitter.png', class: 'contact-logo' %>
+                    </a>
+                    <a href="http://github.com/nas887">
+                        <%= image_tag 'logo_github.png', class: 'contact-logo' %>
+                    </a>
+                    <a href="https://www.linkedin.com/profile/view?id=61022658">
+                        <%= image_tag 'logo_linked_in.png', class: 'contact-logo' %>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19090421-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>

@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 8px;
+}
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+a {
+  color: #5677fc;
+  text-decoration: none;
+}
+a:hover,
+a:visited {
+  color: #2a36b1;
+}
+.contact {
+  text-align: center;
+}
+.contact-logo {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+.contact-logo g,
+.contact-logo path {
+  fill: #212121;
+  stroke: #212121;
+}
+a:hover .contact-logo g,
+a:hover .contact-logo path {
+  fill: #fff;
+  stroke: #fff;
+}
+.logo {
+  max-width: 100%;
+  height: 60px;
+}
+.img-block {
+  display: block;
+  width: 100%;
+}
+.u-texthidden {
+  font-size: 0 !important;
+}
+.constrained,
+.Panel-body,
+.tech-logos {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.padded,
+.Panel-title,
+.Panel-body,
+.Panel-subtitle {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.v-spaced,
+.Panel-title,
+.Panel-body,
+.Panel {
+  margin-bottom: 9rem;
+}
+.Panel-title {
+  font-size: 36px;
+  text-align: center;
+  line-height: 42px;
+}
+.Panel-body {
+  font-size: 14px;
+  line-height: 24px;
+}
+.Panel-subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.Panel {
+  min-height: 40rem;
+}
+@media (max-width: 600px) {
+  .Panel {
+    min-height: 30rem;
+  }
+}
+.Panel--main {
+  position: relative;
+  color: #fff;
+  background-color: #38BD44;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+@media (max-width: 600px) {
+  .Panel--main {
+    padding-top: 7rem;
+  }
+}
+.Panel--main .Panel-title {
+  font-size: 48px;
+  margin-bottom: 3rem;
+}
+@media (max-width: 600px) {
+  .Panel--main .Panel-title {
+    font-size: 34px;
+  }
+}
+.profile-img {
+  position: absolute;
+  bottom: -30%;
+  left: 20px;
+  width: 256px;
+  box-shadow: 1px 1px 5px #999;
+  border-radius: 50%;
+  transition: left 400ms, bottom 400ms, width 400ms;
+  -webkit-transition: left 400ms, bottom 400ms, width 400ms;
+}
+@media (max-width: 1000px) {
+  .profile-img {
+    bottom: -10%;
+    width: 128px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+}
+.tech-logos {
+  display: flex;
+}
+.tech-logo {
+  flex: 1;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  height: 70px;
+  margin: 20px;
+}
+.tech-logo:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  font-size: 10px;
+  padding: 2rem;
+}
